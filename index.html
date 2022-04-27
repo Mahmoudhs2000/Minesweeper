@@ -21,7 +21,20 @@
             border: 2px solid black;
             border-radius: 4px;
             display: grid;
+            margin-top: 20px;
             grid-template-columns: 20% 20% 20% 20% 20%;
+        }
+        .grid1{
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            
+        }
+        .grid2{
+            grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10% !important;
+            
+        }
+        .grid3{
+            grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% !important;
+            
         }
         #card{
             border: 1px solid;
@@ -50,6 +63,24 @@
             font-weight: bold;
             transform: scale(1.5);
         }
+        #menu{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20p;
+        }
+        #levels span{
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 20px !important;
+            border: 1px solid;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+        .selected{
+            background-color: rgb(132, 243, 109);
+        }
     </Style>
 </head>
 <body>
@@ -62,34 +93,16 @@
         <div id='win' >
             Congrats You Win!!
         </div>
+        <div id='menu' >
+            <h1>Select Level</h2>
+            <div id='levels'>
+                <span class='selected' data-level='1' >Easy</span><span data-level="2" >Meduim</span><span data-level="3" >Hard</span>
+            </div>
+        </div>
         <div id='grid' >
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
-            <div id="card"></div>
+
         </div>
     </section>
-    <script src="index.js"></script>
+    <script type='module' src="index.js"></script>
 </body>
 </html>

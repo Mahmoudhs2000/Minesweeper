@@ -16,8 +16,8 @@ export const generateField = (level) => {
     var cells = 0; // Width * Height
     switch (level) {
         case 1:
-            // Level One: 5x5 (25 Cells / 4 bombs);
-            _bombs = 4;
+            // Level One: 5x5 (25 Cells / 3 bombs);
+            _bombs = 3;
             cells = 25;
             var _bombsInx = Array(_bombs).fill().map(() => Math.round(Math.random()*cells));            ;
             for (let i = 0; i < Math.sqrt(cells); i++) {
